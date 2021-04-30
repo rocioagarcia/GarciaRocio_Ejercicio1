@@ -1,11 +1,14 @@
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-
+		//Comentario de prueba
+		
 		Scanner scan = new Scanner(System.in);
 		
+		String fecha;
 		String nombre; 
 		String domicilio;
 		
@@ -23,6 +26,9 @@ public class Main {
 		double iva;
 		double total;
 		
+		System.out.println("Ingrese la fecha");
+		fecha = scan.nextLine();
+		
 		System.out.println("Ingrese su nombre");
 		nombre = scan.nextLine(); 
 		
@@ -39,7 +45,7 @@ public class Main {
 		valunitario1 = scan.nextDouble();
 		
 		System.out.println("Ingrese el nombre del segundo producto");
-		producto2 = scan.next();
+		producto2 = scan.nextLine();
 		
 		System.out.println("Ingrese la cantidad de unidades");
 		cant_prod2 = scan.nextInt();
@@ -55,7 +61,7 @@ public class Main {
 		total = subtotal + iva;
 		
 		System.out.println("*************************************************************************************");
-		System.out.println("FECHA:");
+		System.out.println("FECHA:" + fecha );
 		System.out.println("*************************************************************************************");
 		System.out.println("NOMBRE: " + nombre );
 		System.out.println("DOMICILIO: " + domicilio);
