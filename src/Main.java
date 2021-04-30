@@ -29,9 +29,6 @@ public class Main {
 		double iva;
 		double total;
 		
-		System.out.println("Ingrese la fecha");
-		fecha = scan.nextLine();
-		
 		System.out.println("Ingrese su nombre");
 		nombre = scan.nextLine(); 
 		
