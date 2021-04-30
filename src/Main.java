@@ -4,6 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		//Comentario de prueba
+		
 		Scanner scan = new Scanner(System.in);
 		
 		String nombre; 
