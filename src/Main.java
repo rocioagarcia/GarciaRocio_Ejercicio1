@@ -39,7 +39,7 @@ public class Main {
 		valunitario1 = scan.nextDouble();
 		
 		System.out.println("Ingrese el nombre del segundo producto");
-		producto2 = scan.nextLine();
+		producto2 = scan.next();
 		
 		System.out.println("Ingrese la cantidad de unidades");
 		cant_prod2 = scan.nextInt();
