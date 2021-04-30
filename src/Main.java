@@ -1,3 +1,5 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
@@ -6,7 +8,10 @@ public class Main {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		String fecha;
+		Date fecha = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyy");
+		
+		String fechaActual = sdf.format(fecha);
 		String nombre; 
 		String domicilio;
 		
@@ -41,6 +46,7 @@ public class Main {
 		
 		System.out.println("Ingrese el valor unitario del producto");
 		valunitario1 = scan.nextDouble();
+		scan.nextLine();
 		
 		System.out.println("Ingrese el nombre del segundo producto");
 		producto2 = scan.nextLine();
@@ -59,7 +65,7 @@ public class Main {
 		total = subtotal + iva;
 		
 		System.out.println("*************************************************************************************");
-		System.out.println("FECHA:" + fecha );
+		System.out.println("FECHA:" + fechaActual );
 		System.out.println("*************************************************************************************");
 		System.out.println("NOMBRE: " + nombre );
 		System.out.println("DOMICILIO: " + domicilio);
