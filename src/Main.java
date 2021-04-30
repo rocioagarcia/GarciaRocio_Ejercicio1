@@ -1,10 +1,8 @@
-import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-		//Comentario de prueba
 		
 		Scanner scan = new Scanner(System.in);
 		
